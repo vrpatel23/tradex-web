@@ -3,8 +3,8 @@ import './globals.css'
 import { Providers } from '@/components/Providers'
 
 export const metadata: Metadata = {
-  title: 'TradeX — Global B2B Wholesale Marketplace',
-  description: 'Connect with verified Indian exporters across all industries.',
+  title: 'TradeX - Global B2B Wholesale Marketplace',
+  description: 'Connect with verified Indian exporters.',
 }
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white">
         <Providers>
           {children}
         </Providers>

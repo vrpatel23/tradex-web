@@ -1,4 +1,6 @@
-import Link from 'next/link'
+const fs = require('fs')
+
+const content = `import Link from 'next/link'
 
 export default function HomePage() {
   return (
@@ -42,4 +44,7 @@ export default function HomePage() {
       </div>
     </div>
   )
-}
+}`
+
+fs.writeFileSync('src/app/page.tsx', content)
+console.log('Done!')
